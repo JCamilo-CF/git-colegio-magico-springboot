@@ -6,14 +6,15 @@ package com.quipux.colegio.models;
 // 2. Necesitas mapearla a una tabla llamada "hechizos" con @T...
 // 3. El atributo 'id' debe ser la llave primaria (@I...) y autogenerada (@G...)
 // 4. El atributo 'nombre' debe mapearse a una columna (@C...) y no debe permitir nulos (nullable = false).
+
 @Entity
-@Table(nombre = "hechizos")
+@Table(name = "hechizos")
 public class HechizoEntity {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nombre = "nombre", nullable = false)
+    @Column(name = "nombre", nullable = false)
     private String nombre;
     private String tipoMagia;
     private Integer nivelPoder;
