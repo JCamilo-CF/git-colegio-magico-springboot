@@ -24,7 +24,7 @@ public class HechizoManagerImpl implements HechizoManager {
         // 1. Si el nombre del hechizo es nulo o está vacío, debes lanzar una Exception con el mensaje "Nombre invalido".
         // 2. Si el "tipoMagia" del hechizo es "Oscura", debes lanzar una Exception con el mensaje "Magia prohibida en el colegio".
         
-        // Escribe tu código aquí:
+        // Escribe tu código aquí :
          if (hechizo == null || hechizo.getNombre() == null || hechizo.getNombre().trim().isEmpty()) {
             throw new Exception("Nombre invalido");
         }
