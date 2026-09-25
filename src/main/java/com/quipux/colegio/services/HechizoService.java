@@ -12,7 +12,8 @@ import java.util.List;
 // RETO 4: Expón las "Puertas del Colegio" (APIs REST) usando anotaciones de Jakarta
 // Agrega la anotación para la ruta principal: "/hechizos"
 // PISTA: @P...
-
+@Entity
+@Table(name = "hechizos")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class HechizoService {
